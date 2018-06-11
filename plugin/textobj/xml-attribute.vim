@@ -4,11 +4,11 @@ endif
 
 call textobj#user#plugin('xmlattribute', {
 \   'xmlattribute': {
-\       'pattern': ' *[a-zA-Z0-9\-\:]*=\("[^"]*"\|''[^'']*''\)',
+\       'pattern': ' *[^=<>"'']*=\("[^"]*"\|''[^'']*''\)',
 \       'select': 'axa',
 \   },
 \   'xmlattributenospace': {
-\       'pattern': '[a-zA-Z0-9\-\:]*=\("[^"]*"\|''[^'']*''\)',
+\       'pattern': '[^=<>"'']*=\("[^"]*"\|''[^'']*''\)',
 \       'select': 'ixa',
 \   },
 \})
